@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.appgrupal.tareagrupal.Actividad2"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <RelativeLayout
+        android:layout_width="372dp"
+        android:layout_height="509dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pregunta 2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.246"
+            android:layout_marginBottom="79dp"
+            android:layout_above="@+id/textView5"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Cuál es el planeta más grande?"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="155dp"
+            android:layout_above="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="42dp"
+            android:text="seleccione la respuesta"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="198dp"
+            android:layout_above="@+id/bUrano"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/bJupiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bUrano"
+            android:layout_alignBottom="@+id/bUrano"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:onClick="respuestajupiter"
+            android:text="Júpiter"
+            tools:layout_editor_absoluteX="258dp"
+            tools:layout_editor_absoluteY="256dp" />
+
+        <Button
+            android:id="@+id/bNeptuno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bJupiter"
+            android:layout_alignBottom="@+id/bJupiter"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:onClick="respuestaneptuno"
+            android:text="Neptuno"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="256dp" />
+
+        <Button
+            android:id="@+id/bUrano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="208dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/bNeptuno"
+            android:layout_toStartOf="@+id/bNeptuno"
+            android:onClick="respuestaurano"
+            android:text="Urano"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="256dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
